@@ -10,8 +10,8 @@
 #' @keywords engagement
 #' @export
 #' @examples
-#' engagePlot(engage_df, "Mathematics", "Coach", save=TRUE, save_dir="piper")
-#' engagePlot(engage_df, "Mathematics", "Coach or Peer Advisor", save=TRUE, save_dir = file.path("piper","engagement"))
+#' #engagePlot(engage_df, "Mathematics", "Coach", save=TRUE, save_dir="piper")
+#' #engagePlot(engage_df, "Mathematics", "Coach or Peer Advisor", save=TRUE, save_dir = file.path("piper","engagement"))
 
 
 ####---Engagement Graph Function---####
@@ -98,25 +98,25 @@ engagePlot <- function(data, major, etype, save=FALSE, save_dir=NULL) {
 
   }
   #plot all majors over time, with major of interest highlighted (geom_line(minterest))
-  plot <- ggplot2::ggplot(exper1, aes(x = class_year, y = enkind))+
+  plot <- ggplot2::ggplot(exper1, ggplot2::aes(x = class_year, y = enkind))+
 
     ggplot2::geom_hline(yintercept = c(0,100,200,300,400),size = 0.25,color="#ececec")+
 
-    ggplot2::geom_line(aes(group = maj_conc), color = "#d2d2d2", size = 0.75)+
+    ggplot2::geom_line(ggplot2::aes(group = maj_conc), color = "#d2d2d2", size = 0.75)+
 
     ggplot2::geom_point(data=subset(exper1,class_year != "Sophomore" & class_year != "Junior" & maj_conc != major),color="#d2d2d2",size=2)+
 
-    ggplot2::geom_line(data=minterest,aes(group=1),size=1,color="#1696d2")+
+    ggplot2::geom_line(data=minterest,ggplot2::aes(group=1),size=1,color="#1696d2")+
     ggplot2::geom_point(data=minterest,size=3,color="#1696d2", shape=21, fill="white")+
 
     ggrepel::geom_text_repel(
       data=prob::subset(exper1, class_year == "Senior" & maj_conc == major),
-      aes(class_year, enkind, label=major),
+      ggplot2::aes(class_year, enkind, label=major),
       nudge_x=0.2,
       color = "#1696d2",
       size = 4.2)+
 
-    ggplot2::scale_y_continuous(expand = expansion(mult = c(0, 0.05)))+
+    ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(0, 0.05)))+
 
     ggplot2::labs(title="Student Engagement with Piper Center",
                   subtitle = paste(major, "engagement over time:",tolower(etype)),

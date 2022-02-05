@@ -14,7 +14,7 @@ surveyPivot(
 )
 }
 \arguments{
-\item{data}{Dataframe of with class year, major, and individual student engagement tallies for events (e_attend), coach (coach_appt), peer advisor (pa_appt), and coach or peer advisor (c_pa_appt)}
+\item{data}{Tidy dataframe (ideally of two columns) containing group variable (e.g., ethnicity) and response variable where each row is a unique respondent.}
 
 \item{group_column}{Column of the dataframe where the group variable resides. Defaults to 1.}
 
