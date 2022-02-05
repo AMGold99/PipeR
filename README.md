@@ -1,2 +1,2 @@
 # PipeR
-What the Package Does (One Line, Title Case)
+Speeds up Piper Center Data Analysis
