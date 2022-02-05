@@ -1,0 +1,21 @@
+utils::globalVariables(
+  c("minterest",
+    "exper",
+    "exper1",
+    "plot",
+    "root",
+    "filemajor",
+    "piperfile",
+    "class_year",
+    "maj_conc",
+    "c_pa_appt",
+    "coach_appt",
+    "pa_appt",
+    "e_attend",
+    "enkind",
+    "Value",
+    ".data",
+    "n",
+    "count",
+    "Totals")
+)

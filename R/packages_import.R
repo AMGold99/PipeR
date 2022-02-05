@@ -1,6 +1,6 @@
 # required packages
 
-packages <- c("dplyr","forcats","ggplot2","ggrepel","prob","cowplot","stringr","tidyr")
+packages <- c("dplyr","plyr","forcats","ggplot2","ggrepel","prob","cowplot","stringr","tidyr", "magrittr", "tibble")
 versions <- lapply(packages, packageVersion)
 
 for(i in seq_len(length(packages))) {
