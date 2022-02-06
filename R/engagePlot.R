@@ -1,6 +1,6 @@
 #' Engagement Plot Function
 #'
-#' Plots engagement-type-specific engagement over all four class years by major.
+#' Plots engagement-type-specific engagement over all four class years by academic major.
 #' @title engagePlot
 #' @param data Dataframe of with class year, major, and individual student engagement tallies for events (e_attend), coach (coach_appt), peer advisor (pa_appt), and coach or peer advisor (c_pa_appt)
 #' @param major Major of interest (character). Must match major spelling and case exactly as found in data
