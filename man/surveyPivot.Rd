@@ -37,6 +37,6 @@ Creates pivot table from survey data containing irregular multiple responses. In
 surveyPivot(survey_data)
 
 # Adjusting defaults
-engagePlot(survey_data, group_column = 2, response_column = 1, NAtoZero = FALSE, totals = FALSE)
+surveyPivot(survey_data, group_column = 2, response_column = 1, NAtoZero = FALSE, totals = FALSE)
 }
 \keyword{engagement}
