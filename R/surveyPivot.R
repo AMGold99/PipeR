@@ -23,6 +23,13 @@
 
 surveyPivot <- function(data, group_column = 1, response_column = 2, sep = ",", NAtoZero = TRUE, totals = TRUE) {
 
+  forbidden_pattern <- paste0(sep, "[:blank:]")
+
+  if(sum(stringr::str_detect(tibble::deframe(data[, response_column]), pattern = forbidden_pattern), na.rm = TRUE) > 0) {
+
+    stop(paste0("Dataframe contains seperator (", sep, ") irregularly. Ensure the seperator only appears when separating responses. stringr::str_remove_all() may help here"))
+  }
+
   if(length(names(data))>2) {
 
     stop("Dataframe is too wide. Ensure there are only two variables (group and response) before proceeding.")
