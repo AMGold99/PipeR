@@ -1,4 +1,4 @@
-# PipeR <img src='man/figures/PipeR_logo.png' align="right" height="138.5" />
+# PipeR <img src='man/figures/PipeR_logo_2.png' align="right" height="138.5" />
 Speeds up Piper Center Data Analysis
 
 ***This page is under construction***
