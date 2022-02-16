@@ -14,6 +14,8 @@ utils::globalVariables(
     "e_attend",
     "enkind",
     "Value",
+    "survey_final",
+    "ethnicity_count",
     ".data",
     "n",
     "count",
