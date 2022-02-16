@@ -6,5 +6,11 @@ Speeds up Piper Center Data Analysis
 ## Overview
 
 ## Installation
+Install from Github repository using `devtools::install_github()`:
+``` r
+# development version from GitHub
+# install.packages("devtools")
+devtools::install_github("AMGold99/PipeR")
+```
 
 ## Usage
