@@ -10,7 +10,8 @@ surveyPivot(
   response_column = 2,
   sep = ",",
   NAtoZero = TRUE,
-  totals = TRUE
+  totals = TRUE,
+  percent = TRUE
 )
 }
 \arguments{
@@ -25,6 +26,8 @@ surveyPivot(
 \item{NAtoZero}{Do you want NA values in the pivot table to be replaced with 0? Defaults to TRUE}
 
 \item{totals}{Do you want a column containing row sums across all groups? Defaults to TRUE.}
+
+\item{percent}{Do you want to view the results as group response rates to each selection? Defaults TRUE}
 }
 \description{
 Survey Pivot Function
@@ -34,9 +37,14 @@ Creates pivot table from survey data containing irregular multiple responses. In
 }
 \examples{
 # Basic example with all defaults unchanged
+\dontrun{
+survey_data <- data.frame(ethnicity = c('black','black','white','white','white'),
+experience = c('I did','did not','did not','I did','did not'))
 surveyPivot(survey_data)
 
 # Adjusting defaults
-surveyPivot(survey_data, group_column = 2, response_column = 1, NAtoZero = FALSE, totals = FALSE)
+surveyPivot(survey_data, group_column = 2, response_column = 1,
+NAtoZero = FALSE, totals = FALSE, percent = FALSE)
+}
 }
 \keyword{engagement}

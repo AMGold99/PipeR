@@ -11,7 +11,6 @@
 #' @export
 #' @examples
 #' #engagePlot(engage_df, "Mathematics", "Coach", save=TRUE, save_dir="piper")
-#' #engagePlot(engage_df, "Mathematics", "Coach or Peer Advisor", save=TRUE, save_dir = file.path("piper","engagement"))
 
 
 ####---Engagement Graph Function---####

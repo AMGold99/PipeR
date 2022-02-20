@@ -21,10 +21,9 @@ engagePlot(data, major, etype, save = FALSE, save_dir = NULL)
 Engagement Plot Function
 }
 \details{
-Plots type-specific engagement over all four class years by major.
+Plots engagement-type-specific engagement over all four class years by major.
 }
 \examples{
 #engagePlot(engage_df, "Mathematics", "Coach", save=TRUE, save_dir="piper")
-#engagePlot(engage_df, "Mathematics", "Coach or Peer Advisor", save=TRUE, save_dir = file.path("piper","engagement"))
 }
 \keyword{engagement}

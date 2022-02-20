@@ -8,15 +8,20 @@
 #' @param sep Do you wish to save the plot output to the session directory? Default is FALSE
 #' @param NAtoZero Do you want NA values in the pivot table to be replaced with 0? Defaults to TRUE
 #' @param totals Do you want a column containing row sums across all groups? Defaults to TRUE.
-#' @param percent Do you want to view the results as group response rates to each selection?
+#' @param percent Do you want to view the results as group response rates to each selection? Defaults TRUE
 #' @keywords engagement
 #' @export
 #' @examples
 #' # Basic example with all defaults unchanged
+#' \dontrun{
+#' survey_data <- data.frame(ethnicity = c('black','black','white','white','white'),
+#' experience = c('I did','did not','did not','I did','did not'))
 #' surveyPivot(survey_data)
 #'
 #' # Adjusting defaults
-#' surveyPivot(survey_data, group_column = 2, response_column = 1, NAtoZero = FALSE, totals = FALSE, percent = FALSE)
+#' surveyPivot(survey_data, group_column = 2, response_column = 1,
+#' NAtoZero = FALSE, totals = FALSE, percent = FALSE)
+#' }
 
 
 

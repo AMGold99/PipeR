@@ -1,4 +1,4 @@
 library(testthat)
-library(PipeR)
+library(piperr)
 
-test_check("PipeR")
+test_check("piperr")
