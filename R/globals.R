@@ -22,5 +22,7 @@ utils::globalVariables(
     ".data",
     "n",
     "count",
-    "Totals")
+    "Totals",
+    "path",
+    "year")
 )
