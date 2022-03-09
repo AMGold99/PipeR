@@ -23,7 +23,7 @@ importSheet(link, email, sheet, range = NULL, col_names = TRUE, ...)
 Imports data from a specified Google Sheets spreadsheet
 }
 \details{
-Collates csv files from multiple years containing pivot tables created with surveyPivot. Variable names must be consistent across all files in the directory. The csv file names must contain their year (ex: "survey_2020.csv").
+Wraps several googlesheets4 functions to import a specified sheet (and range if desired) from a Google Sheets document. Aside from link and email, all googlesheets4::read_sheet() arguments may be passed to importSheet()
 }
 \keyword{googlesheets4}
 \keyword{import}

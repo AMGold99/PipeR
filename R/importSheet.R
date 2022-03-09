@@ -1,6 +1,6 @@
 #' Imports data from a specified Google Sheets spreadsheet
 #'
-#' Collates csv files from multiple years containing pivot tables created with surveyPivot. Variable names must be consistent across all files in the directory. The csv file names must contain their year (ex: "survey_2020.csv").
+#' Wraps several googlesheets4 functions to import a specified sheet (and range if desired) from a Google Sheets document. Aside from link and email, all googlesheets4::read_sheet() arguments may be passed to importSheet()
 #' @title importSheet
 #' @param link Link to Google Sheets document containing the data. May be a full url or a Google Sheets ID (the string between "../d/" and "/edit..." in the url).
 #' @param email Email address which has access to the Google Sheets document.
