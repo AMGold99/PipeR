@@ -24,5 +24,6 @@ utils::globalVariables(
     "count",
     "Totals",
     "path",
-    "year")
+    "year",
+    "ss")
 )
