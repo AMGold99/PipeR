@@ -3,5 +3,6 @@
 export("%>%")
 export(collate_csv)
 export(engagePlot)
+export(importSheet)
 export(surveyPivot)
 importFrom(magrittr,"%>%")
