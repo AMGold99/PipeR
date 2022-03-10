@@ -25,5 +25,6 @@ utils::globalVariables(
     "Totals",
     "path",
     "year",
-    "ss")
+    "ss",
+    "unique")
 )
