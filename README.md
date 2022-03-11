@@ -1,7 +1,5 @@
 # piperr <img src='man/figures/piperr_logo.png' align="right" height="138.5" />
-Speeds up Piper Center Data Analysis
-
-***This page is under construction***
+Speed up Piper Center data analysis with **piperr**
 
 ## Overview
 
